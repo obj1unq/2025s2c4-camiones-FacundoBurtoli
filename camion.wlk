@@ -121,7 +121,7 @@ object rutaNueve {
 	const nivelPeligrosidad = 11
 
 	method camionPuedePasar(camionD) {
-		return camionD.puedeCircularEnRuta(nivelPeligrosidad)
+		return camionD.puedeCircular(nivelPeligrosidad)
 	}
 }
 
