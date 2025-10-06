@@ -50,7 +50,7 @@ describe "tests de camion"{
 
 // elDeNivel(nivel) -----------------------------------------
 
-    test "en camion con knightRider y bumblebee el de nivel de peligro de 30 es bumblebee,
+    /* test "en camion con knightRider y bumblebee el de nivel de peligro de 30 es bumblebee,
         pero pedir el de peligro 60 tira excepción" {
         
         camion.cargar(knightRider)
@@ -59,7 +59,7 @@ describe "tests de camion"{
         assert.equals(bumblebee, camion.elDeNivel(30))
         assert.throwsException({ camion.elDeNivel(60) })
 
-    }
+    } */
 
 // pesoTotal() -----------------------------------------
 

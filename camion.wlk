@@ -41,8 +41,15 @@ object camion {
 	}
 
 	method elDeNivel(nivel) {
-		return (cosas.find({ cosa => cosa.nivelPeligrosidad() == nivel }))
+    	if (cosas.any({ cosa => cosa.nivelPeligrosidad() == nivel })) {
+        return cosas.find({ cosa => cosa.nivelPeligrosidad() == nivel })
+    	} else {
+        throw new Exception( message = "no hay ninguna cosa con ese nivel de peligrosidad")
+    	}
 	}
+
+
+
 
 	method objetosQueSuperanPeligrosidad(nivel) {
 		return (cosas.filter({ cosa => cosa.nivelPeligrosidad() > nivel }))
